@@ -1,0 +1,416 @@
+﻿Build started 1/30/2014 1:58:10 PM.
+     1>Project "E:\Game Projects\stick fighter source\Demo10.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating ".\Debug\Game Blank.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0710 /D _MBCS /Gm- /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Debug/" /Fd".\Debug/vc100.pdb" /Gd /TP /analyze- /errorReport:prompt abort.cpp Ai.cpp Buttons.cpp debug.cpp gamerenderer.cpp HeaderManager.cpp ImageFileNameList.cpp Input.cpp InputBuffer.cpp IPMgr.cpp Main.cpp Object.cpp Objman.cpp Random.cpp renderer.cpp Russian.cpp Score.cpp Sound.cpp Sprite.cpp SpriteMan.cpp template.cpp testChar.cpp Text.cpp Timer.cpp tinystr.cpp tinyxml.cpp tinyxmlerror.cpp tinyxmlparser.cpp
+         abort.cpp
+         Ai.cpp
+         Buttons.cpp
+         debug.cpp
+         gamerenderer.cpp
+     1>e:\game projects\stick fighter source\gamerenderer.cpp(153): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\gamerenderer.cpp(161): warning C4244: 'argument' : conversion from 'int' to 'FLOAT', possible loss of data
+     1>e:\game projects\stick fighter source\gamerenderer.cpp(167): warning C4244: 'argument' : conversion from 'int' to 'FLOAT', possible loss of data
+     1>e:\game projects\stick fighter source\gamerenderer.cpp(185): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\gamerenderer.cpp(190): warning C4244: 'argument' : conversion from 'int' to 'FLOAT', possible loss of data
+     1>e:\game projects\stick fighter source\gamerenderer.cpp(196): warning C4244: 'argument' : conversion from 'int' to 'FLOAT', possible loss of data
+     1>e:\game projects\stick fighter source\gamerenderer.cpp(212): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\gamerenderer.cpp(214): warning C4244: 'argument' : conversion from 'int' to 'FLOAT', possible loss of data
+     1>e:\game projects\stick fighter source\gamerenderer.cpp(220): warning C4244: 'argument' : conversion from 'int' to 'FLOAT', possible loss of data
+     1>e:\game projects\stick fighter source\gamerenderer.cpp(234): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\gamerenderer.cpp(245): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\gamerenderer.cpp(250): warning C4244: 'argument' : conversion from 'int' to 'FLOAT', possible loss of data
+     1>e:\game projects\stick fighter source\gamerenderer.cpp(256): warning C4244: 'argument' : conversion from 'int' to 'FLOAT', possible loss of data
+     1>e:\game projects\stick fighter source\gamerenderer.cpp(352): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\gamerenderer.cpp(358): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\gamerenderer.cpp(363): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\gamerenderer.cpp(663): warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\gamerenderer.cpp(664): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\gamerenderer.cpp(665): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\gamerenderer.cpp(679): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\gamerenderer.cpp(680): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\gamerenderer.cpp(684): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\gamerenderer.cpp(685): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\gamerenderer.cpp(690): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\gamerenderer.cpp(784): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\gamerenderer.cpp(785): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\gamerenderer.cpp(789): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\gamerenderer.cpp(790): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\gamerenderer.cpp(795): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\gamerenderer.cpp(899): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\gamerenderer.cpp(900): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\gamerenderer.cpp(904): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\gamerenderer.cpp(905): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\gamerenderer.cpp(910): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\gamerenderer.cpp(1035): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\gamerenderer.cpp(1036): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\gamerenderer.cpp(1040): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\gamerenderer.cpp(1041): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\gamerenderer.cpp(1046): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\gamerenderer.cpp(1158): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\gamerenderer.cpp(1166): warning C4244: 'argument' : conversion from 'int' to 'FLOAT', possible loss of data
+     1>e:\game projects\stick fighter source\gamerenderer.cpp(1172): warning C4244: 'argument' : conversion from 'int' to 'FLOAT', possible loss of data
+     1>e:\game projects\stick fighter source\gamerenderer.cpp(1186): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\gamerenderer.cpp(1191): warning C4244: 'argument' : conversion from 'int' to 'FLOAT', possible loss of data
+     1>e:\game projects\stick fighter source\gamerenderer.cpp(1197): warning C4244: 'argument' : conversion from 'int' to 'FLOAT', possible loss of data
+     1>e:\game projects\stick fighter source\gamerenderer.cpp(1210): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\gamerenderer.cpp(1212): warning C4244: 'argument' : conversion from 'int' to 'FLOAT', possible loss of data
+     1>e:\game projects\stick fighter source\gamerenderer.cpp(1218): warning C4244: 'argument' : conversion from 'int' to 'FLOAT', possible loss of data
+     1>e:\game projects\stick fighter source\gamerenderer.cpp(1229): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\gamerenderer.cpp(1239): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\gamerenderer.cpp(1244): warning C4244: 'argument' : conversion from 'int' to 'FLOAT', possible loss of data
+     1>e:\game projects\stick fighter source\gamerenderer.cpp(1250): warning C4244: 'argument' : conversion from 'int' to 'FLOAT', possible loss of data
+     1>e:\game projects\stick fighter source\gamerenderer.cpp(1796): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\gamerenderer.cpp(1797): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+         HeaderManager.cpp
+     1>e:\game projects\stick fighter source\headermanager.cpp(105): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\headermanager.cpp(106): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\headermanager.cpp(108): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\headermanager.cpp(109): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\headermanager.cpp(111): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\headermanager.cpp(118): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\headermanager.cpp(119): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\headermanager.cpp(120): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\headermanager.cpp(121): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\headermanager.cpp(122): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\headermanager.cpp(123): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\headermanager.cpp(126): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\headermanager.cpp(127): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\headermanager.cpp(128): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\headermanager.cpp(129): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\headermanager.cpp(130): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\headermanager.cpp(131): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\headermanager.cpp(134): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\headermanager.cpp(135): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\headermanager.cpp(136): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\headermanager.cpp(137): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\headermanager.cpp(138): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\headermanager.cpp(139): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\headermanager.cpp(142): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\headermanager.cpp(143): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\headermanager.cpp(144): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\headermanager.cpp(145): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\headermanager.cpp(146): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\headermanager.cpp(147): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\headermanager.cpp(150): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\headermanager.cpp(150): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+         ImageFileNameList.cpp
+         Input.cpp
+     1>e:\game projects\stick fighter source\input.cpp(840): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>e:\game projects\stick fighter source\input.cpp(843): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>e:\game projects\stick fighter source\input.cpp(846): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>e:\game projects\stick fighter source\input.cpp(849): warning C4305: 'argument' : truncation from 'double' to 'float'
+         InputBuffer.cpp
+         IPMgr.cpp
+         Main.cpp
+     1>e:\game projects\stick fighter source\main.cpp(199): warning C4244: 'argument' : conversion from 'double' to 'FLOAT', possible loss of data
+     1>e:\game projects\stick fighter source\main.cpp(207): warning C4244: 'argument' : conversion from 'double' to 'FLOAT', possible loss of data
+         Object.cpp
+     1>e:\game projects\stick fighter source\object.cpp(408): warning C4244: '-=' : conversion from 'float' to 'int', possible loss of data
+         Objman.cpp
+     1>e:\game projects\stick fighter source\objman.cpp(390): warning C4065: switch statement contains 'default' but no 'case' labels
+     1>e:\game projects\stick fighter source\objman.cpp(417): warning C4065: switch statement contains 'default' but no 'case' labels
+     1>e:\game projects\stick fighter source\objman.cpp(886): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(887): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(888): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(889): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(891): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(892): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(893): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(894): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(923): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(925): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(927): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(929): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(934): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(935): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(936): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(937): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(941): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(942): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(943): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(944): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(954): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(954): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(954): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(954): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(956): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(956): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(956): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(956): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(967): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(968): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(969): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(970): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(979): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(979): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(979): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(979): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(981): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(981): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(981): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(981): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(999): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(1001): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(1003): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(1005): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(1010): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(1011): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(1012): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(1013): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(1017): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(1018): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(1019): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(1020): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(1030): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(1030): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(1030): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(1030): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(1032): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(1032): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(1032): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(1032): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(1043): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(1044): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(1045): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(1046): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(1055): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(1055): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(1055): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(1055): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(1057): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(1057): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(1057): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(1057): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(1129): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(1156): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(1177): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(1187): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(1212): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(1239): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(1260): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\objman.cpp(1270): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+         Random.cpp
+         renderer.cpp
+         Russian.cpp
+     1>e:\game projects\stick fighter source\russian.cpp(66): warning C4553: '==' : operator has no effect; did you intend '='?
+     1>e:\game projects\stick fighter source\russian.cpp(68): warning C4553: '==' : operator has no effect; did you intend '='?
+     1>e:\game projects\stick fighter source\russian.cpp(229): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(235): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(245): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(251): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(521): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(529): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(541): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(649): warning C4244: '-=' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(874): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>e:\game projects\stick fighter source\russian.cpp(875): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : see declaration of 'strcat'
+     1>e:\game projects\stick fighter source\russian.cpp(907): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>e:\game projects\stick fighter source\russian.cpp(908): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : see declaration of 'strcat'
+     1>e:\game projects\stick fighter source\russian.cpp(1035): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>e:\game projects\stick fighter source\russian.cpp(1036): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : see declaration of 'strcat'
+     1>e:\game projects\stick fighter source\russian.cpp(1164): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>e:\game projects\stick fighter source\russian.cpp(1165): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : see declaration of 'strcat'
+     1>e:\game projects\stick fighter source\russian.cpp(1279): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>e:\game projects\stick fighter source\russian.cpp(1280): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : see declaration of 'strcat'
+     1>e:\game projects\stick fighter source\russian.cpp(1544): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(1545): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(1546): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(1566): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(1571): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(1582): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(1593): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(1604): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(1609): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(1909): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2039): warning C4553: '==' : operator has no effect; did you intend '='?
+     1>e:\game projects\stick fighter source\russian.cpp(2126): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2130): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2131): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2147): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2152): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2153): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2170): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2171): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2183): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2184): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2202): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2203): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2220): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2221): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2222): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2247): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2248): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2249): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2253): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2254): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2268): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2269): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2270): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2274): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2275): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2288): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2289): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2294): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2313): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2314): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2319): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2320): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2332): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2333): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2338): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2339): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2352): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2353): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2358): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2359): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2371): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2372): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2378): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2379): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2394): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2395): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2401): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2402): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2416): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2417): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2422): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2423): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2436): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2437): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2442): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2443): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2456): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2457): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2463): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\game projects\stick fighter source\russian.cpp(2464): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+         Score.cpp
+     1>e:\game projects\stick fighter source\score.cpp(57): warning C4065: switch statement contains 'default' but no 'case' labels
+         Sound.cpp
+         Sprite.cpp
+         SpriteMan.cpp
+         Generating Code...
+     1>e:\game projects\stick fighter source\objman.cpp(426): warning C4700: uninitialized local variable 'newtype' used
+     1>e:\game projects\stick fighter source\objman.cpp(722): warning C4715: 'CObjectManager::getDirHeld' : not all control paths return a value
+     1>e:\game projects\stick fighter source\objman.cpp(1588): warning C4715: 'CObjectManager::getCurrentAnimationFrame' : not all control paths return a value
+     1>e:\game projects\stick fighter source\input.cpp(1625): warning C4715: 'CInputManager::ProcessXboxController' : not all control paths return a value
+     1>e:\game projects\stick fighter source\input.cpp(1790): warning C4715: 'CInputManager::checkDirection' : not all control paths return a value
+         Compiling...
+         template.cpp
+     1>e:\game projects\stick fighter source\template.cpp(404): warning C4244: '-=' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\template.cpp(554): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>e:\game projects\stick fighter source\template.cpp(555): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : see declaration of 'strcat'
+     1>e:\game projects\stick fighter source\template.cpp(597): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>e:\game projects\stick fighter source\template.cpp(598): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : see declaration of 'strcat'
+     1>e:\game projects\stick fighter source\template.cpp(630): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>e:\game projects\stick fighter source\template.cpp(631): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : see declaration of 'strcat'
+     1>e:\game projects\stick fighter source\template.cpp(756): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>e:\game projects\stick fighter source\template.cpp(757): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : see declaration of 'strcat'
+     1>e:\game projects\stick fighter source\template.cpp(883): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>e:\game projects\stick fighter source\template.cpp(884): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : see declaration of 'strcat'
+     1>e:\game projects\stick fighter source\template.cpp(998): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>e:\game projects\stick fighter source\template.cpp(999): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : see declaration of 'strcat'
+     1>e:\game projects\stick fighter source\template.cpp(1432): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+         testChar.cpp
+     1>e:\game projects\stick fighter source\testchar.cpp(498): warning C4244: '-=' : conversion from 'float' to 'int', possible loss of data
+     1>e:\game projects\stick fighter source\testchar.cpp(643): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>e:\game projects\stick fighter source\testchar.cpp(644): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : see declaration of 'strcat'
+     1>e:\game projects\stick fighter source\testchar.cpp(692): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>e:\game projects\stick fighter source\testchar.cpp(693): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : see declaration of 'strcat'
+     1>e:\game projects\stick fighter source\testchar.cpp(725): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>e:\game projects\stick fighter source\testchar.cpp(726): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : see declaration of 'strcat'
+     1>e:\game projects\stick fighter source\testchar.cpp(977): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>e:\game projects\stick fighter source\testchar.cpp(978): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : see declaration of 'strcat'
+     1>e:\game projects\stick fighter source\testchar.cpp(1230): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>e:\game projects\stick fighter source\testchar.cpp(1231): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : see declaration of 'strcat'
+     1>e:\game projects\stick fighter source\testchar.cpp(1345): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>e:\game projects\stick fighter source\testchar.cpp(1346): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : see declaration of 'strcat'
+     1>e:\game projects\stick fighter source\testchar.cpp(1758): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+         Text.cpp
+         Timer.cpp
+         tinystr.cpp
+         tinyxml.cpp
+         tinyxmlerror.cpp
+         tinyxmlparser.cpp
+         Generating Code...
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo".\Debug\Game Blank.exe.embed.manifest.res" ".\Debug\Game Blank_manifest.rc" 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Debug\Game Blank.exe" /INCREMENTAL /NOLOGO D3dx9.lib d3d9.lib ws2_32.lib winmm.lib dsound.lib dinput8.lib dxguid.lib dxerr.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:".\Debug\Game Blank.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:".\Debug/Demo10.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE:NO /IMPLIB:".\Debug\Game Blank.lib" /MACHINE:X86 ".\Debug\Game Blank.exe.embed.manifest.res"
+         .\Debug/abort.obj
+         .\Debug/Ai.obj
+         .\Debug/Buttons.obj
+         .\Debug/debug.obj
+         .\Debug/gamerenderer.obj
+         .\Debug/HeaderManager.obj
+         .\Debug/ImageFileNameList.obj
+         .\Debug/Input.obj
+         .\Debug/InputBuffer.obj
+         .\Debug/IPMgr.obj
+         .\Debug/Main.obj
+         .\Debug/Object.obj
+         .\Debug/Objman.obj
+         .\Debug/Random.obj
+         .\Debug/renderer.obj
+         .\Debug/Russian.obj
+         .\Debug/Score.obj
+         .\Debug/Sound.obj
+         .\Debug/Sprite.obj
+         .\Debug/SpriteMan.obj
+         .\Debug/template.obj
+         .\Debug/testChar.obj
+         .\Debug/Text.obj
+         .\Debug/Timer.obj
+         .\Debug/tinystr.obj
+         .\Debug/tinyxml.obj
+         .\Debug/tinyxmlerror.obj
+         .\Debug/tinyxmlparser.obj /MACHINE:I386 
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:".\Debug\Game Blank.exe.embed.manifest" /manifest ".\Debug\Game Blank.exe.intermediate.manifest"
+         All outputs are up-to-date.
+       LinkEmbedManifest:
+         All outputs are up-to-date.
+         Demo10.vcxproj -> E:\Game Projects\stick fighter source\.\Debug\Game Blank.exe
+       FinalizeBuildStatus:
+         Deleting file ".\Debug\Game Blank.unsuccessfulbuild".
+         Touching ".\Debug\Game Blank.lastbuildstate".
+     1>Done Building Project "E:\Game Projects\stick fighter source\Demo10.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:09.78

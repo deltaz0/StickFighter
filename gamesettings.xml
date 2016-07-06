@@ -1,0 +1,681 @@
+<?xml version="1.0"?>
+<!-- Game Settings -->
+
+<!--<!DOCTYPE ground [
+  <!ELEMENT ground EMPTY>
+  <!ATTLIST ground 
+    alt CDATA #IMPLIED
+    src CDATA #REQUIRED
+    type CDATA "ground/gif">
+]>-->
+
+
+<settings>
+
+
+  <!-- general settings -->
+
+  <game name="Stick Fighter" />
+
+	<!-- renderer settings (native resolution for game should be left at 1024x768, but it will work with others) -->
+
+	<renderer width="1024" height="768" windowed="1" />
+	
+	<!-- intro sequence -->
+	
+	<intro logo="100" title="100" credits="7" />
+
+	<!-- image file names -->
+
+	<images>
+	  <image src="Images\\bg.bmp" />
+	  <image src="Images\\ground.jpg" />
+    <image src="Images\\wall.bmp" />
+    <image src="Images\\black.png" />
+	  <image src="Images\\logo.jpg" />
+	  <image src="Images\\title.bmp" />
+	  <image src="Images\\credits.bmp" />
+	  <image src="Images\\menu.bmp" />
+	  <image src="Images\\cursor.png" />
+    <image src="Images\\loading.png" />
+    <image src="Images\\dmenu.bmp" />
+    <image src="Images\\hud.png" />
+    <image src="Images\\success.bmp" />
+    <image src="Images\\health.png" />
+    <image src="Images\\health2.png" />
+    <image src="Images\\mediumhealth.png" />
+    <image src="Images\\mediumhealth2.png" />
+    <image src="Images\\lowhealth.png" />
+    <image src="Images\\lowhealth2.png" />
+    <image src="Images\\superbar.png" />
+    <image src="Images\\superbar2.png" />
+	</images>
+	
+	<!-- sprites -->
+	
+	<sprites>
+		<sprite name="player" file="Images\\player" ext="png" frames="25" />
+    <sprite name="russian" file="Images\\Russian\\russian" ext="png" frames="251" />
+    <sprite name="npc" file="Images\\enemy" ext="png" frames="2" />
+		<sprite name="button" file="Images\\button" ext="png" frames="2" />
+    <sprite name="collisionbox" file="Images\\CollisionBox" ext="png" frames="1" />
+    <sprite name="hitbox" file="Images\\HitBox" ext="png" frames="1" />
+    <sprite name="hurtbox" file="Images\\HurtBox" ext="png" frames="1" />
+    <sprite name="circle" file="Images\\circle"  ext="png" frames="1" />
+    <sprite name="ready" file="Images\\ready" ext="png" frames="1" />
+    <sprite name="fight" file="Images\\fight"  ext="png" frames="1" />
+    <sprite name="nine" file="Images\\nine"  ext="png" frames="1" />
+    <sprite name="eight" file="Images\\eight"  ext="png" frames="1" />
+    <sprite name="seven" file="Images\\seven"  ext="png" frames="1" />
+    <sprite name="six" file="Images\\six"  ext="png" frames="1" />
+    <sprite name="five" file="Images\\five"  ext="png" frames="1" />
+    <sprite name="four" file="Images\\four"  ext="png" frames="1" />
+    <sprite name="three" file="Images\\three"  ext="png" frames="1" />
+    <sprite name="two" file="Images\\two"  ext="png" frames="1" />
+    <sprite name="one" file="Images\\one"  ext="png" frames="1" />
+    <sprite name="zero" file="Images\\zero"  ext="png" frames="1" />
+    <sprite name="roundone" file="Images\\roundone" ext="png" frames="1" />
+    <sprite name="roundtwo" file="Images\\roundtwo" ext="png" frames="1" />
+    <sprite name="roundthree" file="Images\\roundthree" ext="png" frames="1" />
+    <sprite name="p1win" file="Images\\p1win" ext="png" frames="1" />
+    <sprite name="p2win" file="Images\\p2win" ext="png" frames="1" />
+    <sprite name="arrow" file="Images\\arrow" ext="png" frames="1" />
+    <sprite name="roundnotchoff" file="Images\\roundnotchoff" ext="png" frames="1" />
+    <sprite name="roundnotchon" file="Images\\roundnotchon" ext="png" frames="1" />
+    <sprite name="hitspark" file="Images\\hitspark" ext="png" frames="6" />
+    <sprite name="combo" file="Images\\combo" ext="png" frames="1" />
+    <sprite name="wnine" file="Images\\wnine"  ext="png" frames="1" />
+    <sprite name="weight" file="Images\\weight"  ext="png" frames="1" />
+    <sprite name="wseven" file="Images\\wseven"  ext="png" frames="1" />
+    <sprite name="wsix" file="Images\\wsix"  ext="png" frames="1" />
+    <sprite name="wfive" file="Images\\wfive"  ext="png" frames="1" />
+    <sprite name="wfour" file="Images\\wfour"  ext="png" frames="1" />
+    <sprite name="wthree" file="Images\\wthree"  ext="png" frames="1" />
+    <sprite name="wtwo" file="Images\\wtwo"  ext="png" frames="1" />
+    <sprite name="wone" file="Images\\wone"  ext="png" frames="1" />
+    <sprite name="wzero" file="Images\\wzero"  ext="png" frames="1" />
+	</sprites>
+	
+	<!-- objects-->
+  <!--Hitbox format: xOffset, yOffset, xSize, ySize, secondaryHitBoxIndex-->
+  <!--Collision boxes are:-->
+  <!--0 = Crouching-->
+  <!--1 = Standing-->
+  <!--2 = Airborne-->
+  <!--3 = Knocked Down-->
+	<objects>
+    <!--Any animation offsets end flag is non inclusive-->
+    <!--Animation 0 = neutral-->
+    <!--Animation 1 = walk -->
+    <!--Animation 2 = light jab-->
+    <!--Animation 3 = light kick-->
+    <!--Animation 4 = heavy jab-->
+    <!--Animation 5/6/7 = hitstun states-->
+    <!--Animation 8/9/10 = block states-->
+    <!--Animation 11 = Airborn-->
+    <!--Animation 12 = Air Hitstun-->
+    <!--Animation 13 = Knocked down-->
+    <!--Animation 14 = Crouching-->
+    <!--Animation 15 = Wakeup-->
+		<object name="player"
+			minxspeed="-40" maxxspeed="40" 
+			minyspeed="-40" maxyspeed="40" 
+			frameinterval="200"
+			vulnerable="0"
+			fly="1"
+			cycle="1"
+      animation0="0,-"
+      animation1="0,1,2,3,2,1,-"
+      animation2="4,5,5,-"
+      animation3="6,7,8,8,6,9,-"
+      animation4="9,10,11,12,12,10,9,-"
+      animation5="13,14,15,-"
+      animation6="15,-"
+      animation7="14,13,-"
+      animation8="16,18,-"
+      animation9="18,-"
+      animation10="18,17,-"
+      animation11="19,-"
+      animation12="20,-"
+      animation13="21,-"
+      animation14="22,-"
+      animation15="21,21,21,21,23,24,-"
+      animation="0,1,2,3,2,1"
+      animationcount="16"
+      longestanimation="7"
+      animationindices0="0,1"
+      animationindices1="0,6"
+      animationindices2="6,9"
+      animationindices3="9,14"
+      animationindices4="14,21"
+      animationindices5="21,24"
+      animationindices6="23,24"
+      animationindices7="24,26"
+      animationindices8="26,28"
+      animationindices9="27,28"
+      animationindices10="28,30"
+      animationindices11="30,31"
+      animationindices12="31,32"
+      animationindices13="32,33"
+      animationindices14="33,34"
+      animationindices15="34,40"
+      secondaryhitboxcount="1"
+      secondaryhurtboxcount="2"
+      hurtbox0="10,40,.7,1.3,-1"
+      hurtbox1="10,40,.7,1.3,-1"
+      hurtbox2="10,40,.7,1.3,-1"
+      hurtbox3="10,40,.7,1.3,-1"
+      hurtbox4="10,40,.7,1.3,-1"
+      hurtbox5="10,40,.7,1.3,-1"
+      hurtbox6="10,40,.7,1.3,-1"
+      hurtbox7="10,40,.7,1.3,-1"
+      hurtbox8="10,40,.7,1.3,-1"
+      hurtbox9="10,40,.7,1.3,-1"
+      hurtbox10="20,40,.6,1.3,-1"
+      hurtbox11="20,40,.6,1.3,0"
+      hurtbox12="25,40,.6,1.3,1"
+      hurtbox13="10,40,.7,1.3,-1"
+      hurtbox14="10,40,.7,1.3,-1"
+      hurtbox15="10,40,.7,1.3,-1"
+      hurtbox16="10,40,.7,1.3,-1"
+      hurtbox17="10,40,.7,1.3,-1"
+      hurtbox18="10,40,.7,1.3,-1"
+      hurtbox19="10,40,.7,1.3,-1"
+      hurtbox20="10,40,.7,1.3,-1"
+      hurtbox22="10,40,.7,.9,-1"
+      hitbox5="50,90,.7,.2,-1"
+      hitbox8="30,43,.4,.2,0"
+      hitbox12="60,90,.8,.2,-1"
+      secondaryhurtbox0="58,60,.4,.2,-1"
+      secondaryhurtbox1="75,90,.5,.15,-1"
+      secondaryhitbox0="72,58,.5,.2,-1"
+      collisionbox0="10,5,.45,.7,-1"
+      collisionbox1="10,30,.45,1.2,-1"
+      collisionbox2="10,30,.40,.8,-1"
+      collisionbox3="10,-30,.6,.3,-1"
+      static="0"
+		/>
+
+-->
+    <!-- objects-->
+    <!--Hitbox format: xOffset, yOffset, xSize, ySize, secondaryHitBoxIndex-->
+    <!--Collision boxes are:-->
+    <!--0 = Crouching-->
+    <!--1 = Standing-->
+    <!--2 = Airborne-->
+    <!--3 = Knocked Down-->
+    <!--Animation 0:  Neutral   66  hurt
+        Animation 1:  Forward Walk Transition 2 hurt
+        Animation 2:  Forward Walk Loop 48 hurt
+        Animation 3:  Back Walk Transition 1 hurt
+        Animation 4:  Back Walk Loop 48 hurt
+        Animation 5:  Forward Dash Transition 2 hurt
+        Animation 6:  Forward Dash Loop 42 hurt
+        Animation 7:  Backward Dash 25 (start movement on 3, end on 17) hurt
+        Animation 8:  Jumpsquat 5 hurt
+        Animation 9:  Jumping 14
+        Animation 10: Air Neutral 1 (technically)
+        Animation 11: Crouch Transition 6 hurt
+        Animation 12: Crouch State 1 (technically) hurt
+        Animation 13: Exit Crouch 5 hurt
+        Animation 14: Forward Air Dash 26 hurt
+        Animation 15: Back Air Dash 19 hurt
+        Animation 16/17/18: Hit Stun 5/1/4
+        Animation 19: Standing Light Attack 10
+        Animation 20: Standing Medium Attack 30
+        Animation 21: Standing Heavy Attack 45
+        Animation 22: Crouching Light 13
+        Animation 23: Crouching Medium 36
+        Animation 24: Crouching Heavy 49
+        Animation 25/26: Airborn Hitstun 18/1
+        Animation 27/28: Down State 7/30
+        Animation 29: Wakeup 36
+        Animation 30/31/32: Crouching Hitstun 7/1/6
+        Animation 33: Jumping Light 26
+        Animation 34: Jumping Medium 32
+        Animation 35: Jumping Heavy Placeholder
+        Animation 36: Weak Headbutt 62 (22 startup)
+        Animation 37: Mid Headbutt  68 (36 startup)
+        Animation 38: Standing Block 8
+        Animation 39: Standing Block Loop 1
+        Animation 40: Standing Block End 8
+        Animation 41: Crouching Block 8
+        Animation 42: Crouching Block Loop 1
+        Animation 43: Crouching Block End 8
+        Animation 44: Air Block 2
+        Animation 45: Air Block Loop 1
+        Animation 46: Air Block End 2
+        Animation 47: Standing Medium Followup 26
+        Animation 48: Crouching Light Followup 13
+        Animation 49: Launcher Special 60 hits on 10, active for 3
+        Animation 50: Launcher air loop
+        Animation 51: Launcher A Followup Startup
+        Animation 52: Launcher A Followup Knee Of Great Justice
+        Animation 53: Launcher A Followup Cooldown-->
+    <object name="russian"
+			minxspeed="-40" maxxspeed="40"
+			minyspeed="-40" maxyspeed="40"
+			frameinterval="16"
+			vulnerable="0"
+			fly="1"
+			cycle="1"
+      animation0="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,2,2,2,2,2,2,3,3,4,4,3,3,4,4,3,3,4,4,3,3,4,4,3,3,4,4,4,4,4,4,6,6,6,6,6,6,6,6,-"
+      animation1="7,8,-"
+      animation2="9,9,9,9,10,10,10,10,11,11,11,11,12,12,12,12,13,13,13,13,14,14,14,14,15,15,15,15,16,16,16,16,17,17,17,17,18,18,18,18,19,19,19,19,20,20,20,20,-"
+      animation3="21,-"
+      animation4="22,22,22,22,22,22,23,23,23,23,23,23,24,24,24,24,24,24,25,25,25,25,25,25,26,26,26,26,26,26,27,27,27,27,27,27,28,28,28,28,28,28,29,29,29,29,29,29,-"
+      animation5="30,31,-"
+      animation6="32,32,32,33,33,33,34,34,34,35,35,35,36,36,36,37,37,37,38,38,38,39,39,39,40,40,40,41,41,41,42,42,42,43,43,43,45,45,45,-"
+      animation7="200,201,202,203,203,204,204,205,205,206,206,207,207,208,208,209,209,210,210,211,211,212,212,213,213,-"
+      animation8="46,47,48,-"
+      animation9="49,49,49,50,50,50,50,50,51,51,51,51,51,52,-"
+      animation10="52,52,52,52,52,52,-"
+      animation11="53,53,53,54,54,54,-"
+      animation12="55,55,55,55,55,55,-"
+      animation13="54,54,53,53,53,-"
+      animation14="56,56,57,57,58,58,58,58,59,59,59,59,59,59,59,59,59,59,58,58,58,58,58,56,56,56,-"
+      animation15="60,60,61,61,62,62,62,63,63,63,63,63,63,62,62,61,61,60,60,-"
+      animation16="64,64,65,65,66,-"
+      animation17="66,-"
+      animation18="65,65,64,64,-"
+      animation19="94,94,94,95,95,96,96,96,232,232,232,232,233,233,233,233-"
+      animation20="97,97,97,97,98,98,98,99,99,100,101,102,102,102,227,227,227,227,227,227,228,228,228,229,229,229,230,230,231,231,-"
+      animation21="112,112,112,113,113,113,114,114,114,115,115,115,116,116,116,117,117,117,119,119,119,119,119,119,120,120,120,121,121,121,122,122,122,123,123,123,124,124,124,125,125,125,126,126,126,-"
+      animation22="127,127,127,127,128,128,128,129,129,129,130,130,130,-"
+      animation23="134,134,134,135,135,135,136,136,136,137,137,137,138,138,138,139,139,140,140,140,141,141,141,142,142,142,143,143,143,144,144,144,145,145,145,-"
+      animation24="146,147,147,147,148,148,148,149,149,149,150,150,150,151,151,151,152,152,152,153,153,153,154,154,154,156,156,156,157,157,157,158,158,158,159,159,159,160,160,160,161,161,161,-"
+      animation25="71,71,71,72,72,72,73,73,73,74,74,74,-"
+      animation26="74,-"
+      animation27="75,75,75,76,76,76,77,-"
+      animation28="77,77,77,77,77,77,77,77,77,77,77,77,77,77,77,77,77,77,77,77,77,77,77,77,77,77,77,77,77,77,-"
+      animation29="78,78,78,79,79,79,80,80,80,81,81,81,82,82,82,83,83,83,84,84,84,85,85,85,86,86,86,87,87,87,88,88,88,89,89,89,-"
+      animation30="67,67,67,68,68,68,69,-"
+      animation31="69,-"
+      animation32="68,68,68,67,67,67,-"
+      animation33="163,164,165,165,166,166,167,167,167,167,167,168,168,168,168,168,168,170,170,170,170,170,170,170,170,170,-"
+      animation34="171,172,172,173,173,173,174,175,176,177,178,179,179,179,179,179,180,180,180,180,180,180,181,181,181,182,181,181,181,182,182,182,-"
+      animation35="216,216,216,217,217,217,217,218,218,218,218,218,219,219,220,221,221,222,222,222,222,222,222,223,223,223,223,223,223,223,224,224,224,225,225,225,226,226,-"
+      animation36="184,184,184,185,185,185,185,186,186,186,186,187,187,187,187,187,188,188,188,188,188,189,190,190,190,190,190,190,191,191,191,191,192,192,192,192,193,193,193,194,194,194,195,195,195,195,196,196,196,196,197,197,197,197,198,198,198,198,199,199,199,-"
+      animation37="184,184,184,184,184,184,185,185,185,185,185,185,185,185,186,186,186,186,186,186,186,186,187,187,187,187,187,187,187,188,188,188,188,188,188,189,190,190,190,190,190,190,191,191,191,191,192,192,192,193,193,194,194,195,195,195,196,196,196,197,197,197,198,198,198,199,199,-"
+      animation38="90,90,90,91,91,91,91,91,-"
+      animation39="91,-"
+      animation40="91,91,91,91,91,90,90,90,-"
+      animation41="92,92,92,93,93,93,93,93,-"
+      animation42="93,-"
+      animation43="93,93,93,93,93,92,92,92,-"
+      animation44="214,215,-"
+      animation45="215,-"
+      animation46="215,214,-"
+      animation47="103,103,103,105,105,105,106,106,106,106,106,107,107,107,108,108,108,109,109,109,110,110,110,111,111,111,-"
+      animation48="131,131,131,131,132,132,132,133,133,133,130,130,130,-"
+      animation49="112,112,113,113,114,114,115,115,234,235,235,235,236,236,236,236,237,237,237,237,237,238,238,238,238,238,239,239,239,239,239,239,239,239,240,240,240,240,240,241,241,241,241,241,242,242,242,242,242,242,243,243,243,243,243,244,244,244,244,-"
+      animation50="52,52,52,52,52,52,-"
+      animation51="164,164,164,164,163,163,163,163,249,249,249,249,249,249,249,249,249,249,163,163,165,167,250,-"
+      animation52="245,245,245,246,246,246,245,245,245,247,247,247,246,246,246,247,247,247,248,248,248,247,247,245,245,246,246,246,247,247,247,248,248,248,-"
+      animation53="168,168,168,168,168,168,170,170,170,170,170,170,170,170,170,-"
+      animation="0,1,2,3,2,1"
+      animationcount="54"
+      longestanimation="68"
+      animationindices0="0,1"
+      animationindices1="0,6"
+      animationindices2="6,9"
+      hurtbox0="5,15,.7,1.21,-1"
+      hurtbox1="5,15,.7,1.21,-1"
+      hurtbox2="5,15,.7,1.21,-1"
+      hurtbox3="5,15,.7,1.21,-1"
+      hurtbox4="5,15,.7,1.21,-1"
+      hurtbox5="5,15,.7,1.21,-1"
+      hurtbox6="5,15,.7,1.21,-1"
+      hurtbox7="5,20,.6,1.3,-1"
+      hurtbox8="5,20,.6,1.3,-1"
+      hurtbox9="5,20,.6,1.3,-1"
+      hurtbox10="5,20,.6,1.3,-1"
+      hurtbox11="5,20,.6,1.3,-1"
+      hurtbox12="5,20,.6,1.3,-1"
+      hurtbox13="5,20,.6,1.3,-1"
+      hurtbox14="5,20,.6,1.3,-1"
+      hurtbox15="5,20,.6,1.3,-1"
+      hurtbox16="5,20,.6,1.3,-1"
+      hurtbox17="5,20,.6,1.3,-1"
+      hurtbox18="5,20,.6,1.3,-1"
+      hurtbox19="5,20,.6,1.3,-1"
+      hurtbox20="5,20,.6,1.3,-1"
+      hurtbox21="0,20,.63,1.3,-1"
+      hurtbox22="0,20,.63,1.3,-1"
+      hurtbox23="0,20,.63,1.3,-1"
+      hurtbox24="0,20,.63,1.3,-1"
+      hurtbox25="0,20,.63,1.3,-1"
+      hurtbox26="0,20,.63,1.3,-1"
+      hurtbox27="0,20,.63,1.3,-1"
+      hurtbox28="0,20,.63,1.3,-1"
+      hurtbox29="0,20,.63,1.3,-1"
+      hurtbox30="1,5,.64,1.04,0"
+      hurtbox31="1,5,.64,1.04,0"
+      hurtbox32="1,5,.64,1.04,0"
+      hurtbox33="1,5,.64,1.04,0"
+      hurtbox34="1,5,.64,1.04,0"
+      hurtbox35="1,5,.64,1.04,0"
+      hurtbox36="1,5,.64,1.04,0"
+      hurtbox37="1,5,.64,1.04,0"
+      hurtbox38="1,5,.64,1.04,0"
+      hurtbox39="1,5,.64,1.04,0"
+      hurtbox40="1,5,.64,1.04,0"
+      hurtbox41="1,5,.64,1.04,0"
+      hurtbox42="1,5,.64,1.04,0"
+      hurtbox43="1,5,.64,1.04,0"
+      hurtbox44="1,5,.64,1.04,0"
+      hurtbox45="1,5,.64,1.04,0"
+      hurtbox46="5,15,.7,1.21,-1"
+      hurtbox47="5,15,.7,1.21,-1"
+      hurtbox48="5,15,.7,1.21,-1"
+      hurtbox49="15,71,.9,.55,7"
+      hurtbox50="15,71,.9,.55,7"
+      hurtbox51="31,80,.62,.56,8"
+      hurtbox52="33,73,.7,.55,9"
+      hurtbox53="5,15,.7,1.21,-1"
+      hurtbox54="5,15,.7,1.21,-1"
+      hurtbox55="5,-3,.7,.89,-1"
+      hurtbox56="31,28,.7,1.1,-1"
+      hurtbox57="32,15,.91,.7,-1"
+      hurtbox58="-3,-2,.73,.59,1"
+      hurtbox59="-3,-2,.73,.59,1"
+      hurtbox60="24,7,.70,.74,2"
+      hurtbox61="24,7,.70,.74,2"
+      hurtbox62="24,7,.70,.74,2"
+      hurtbox63="24,7,.70,.74,2"
+      hurtbox64="5,20,.7,1.3,-1"
+      hurtbox65="5,20,.7,1.3,-1"
+      hurtbox66="5,20,.7,1.3,-1"
+      hurtbox67="5,20,.7,1.3,-1"
+      hurtbox68="5,20,.7,1.3,-1"
+      hurtbox69="5,20,.7,1.3,-1"
+      hurtbox70="5,20,.7,1.3,-1"
+      hurtbox71="5,20,.7,1.3,-1"
+      hurtbox72="5,20,.7,1.3,-1"
+      hurtbox73="5,20,.7,1.3,-1"
+      hurtbox74="5,20,.7,1.3,-1"
+      hurtbox75="5,20,.7,1.3,-1"
+      hurtbox76="5,20,.7,1.3,-1"
+      hurtbox90="5,20,.7,1.3,-1"
+      hurtbox91="5,20,.7,1.3,-1"
+      hurtbox92="5,20,.7,1.3,-1"
+      hurtbox93="5,20,.7,1.3,-1"
+      hurtbox94="5,15,.7,1.21,-1"
+      hurtbox95="5,15,.7,1.21,4"
+      hurtbox96="5,15,.7,1.21,3"
+      hurtbox97="7,20,.57,1.3,-1"
+      hurtbox98="7,20,.53,1.3,-1"
+      hurtbox99="12,21,.58,1.3,-1"
+      hurtbox100="2,13,.54,1.16,-1"
+      hurtbox101="8,13,.61,1.16,-1"
+      hurtbox102="2,5,.56,1.04,-1"
+      hurtbox103="5,20,.7,1.3,16"
+      hurtbox104="5,20,.7,1.3,-1"
+      hurtbox105="22,2,.92,1.01,-1"
+      hurtbox106="24,-11,.9,.77,-1"
+      hurtbox107="12,7,.73,1.07,-1"
+      hurtbox108="11,15,.7,1.2,-1"
+      hurtbox109="5,20,.67,1.3,-1"
+      hurtbox110="2,23,.46,1.33,-1"
+      hurtbox111="3,20,.57,1.3,-1"
+      hurtbox112="5,20,.7,1.3,-1"
+      hurtbox113="5,20,.7,1.3,-1"
+      hurtbox114="5,20,.7,1.3,-1"
+      hurtbox115="5,20,.7,1.3,-1"
+      hurtbox116="5,20,.7,1.3,-1"
+      hurtbox117="11,9,.7,1.11,6"
+      hurtbox118="5,20,.7,1.3,-1"
+      hurtbox119="5,20,.7,1.3,-1"
+      hurtbox120="5,20,.7,1.3,-1"            
+      hurtbox121="5,20,.7,1.3,-1"
+      hurtbox122="5,20,.7,1.3,-1"
+      hurtbox123="5,20,.7,1.3,-1"
+      hurtbox124="5,20,.7,1.3,-1"
+      hurtbox125="5,20,.7,1.3,-1"
+      hurtbox126="5,20,.7,1.3,-1"
+      hurtbox127="5,-3,.7,.89,5"
+      hurtbox128="5,-3,.7,.89,5"
+      hurtbox129="5,-3,.7,.89,5"
+      hurtbox130="5,-3,.7,.89,-1"            
+      hurtbox131="5,-3,.7,.89,5"
+      hurtbox132="5,-3,.7,.89,5"
+      hurtbox133="5,-3,.7,.89,5"
+      hurtbox134="5,-3,.7,.89,-1"
+      hurtbox135="5,-3,.7,.89,-1"
+      hurtbox136="85,-3,1.44,.89,-1"
+      hurtbox137="85,-3,1.44,.89,-1"
+      hurtbox138="85,-3,1.44,.89,-1"
+      hurtbox139="85,-3,1.44,.89,-1"
+      hurtbox140="85,-3,1.44,.89,-1"            
+      hurtbox141="85,-3,1.44,.89,-1"
+      hurtbox142="85,-3,1.44,.89,-1"
+      hurtbox143="85,-3,1.44,.89,-1"
+      hurtbox144="85,-3,1.44,.89,-1"
+      hurtbox145="5,-3,.7,.89,-1"
+      hurtbox146="5,-3,.7,.89,-1"
+      hurtbox147="5,-3,.7,.89,-1"
+      hurtbox148="5,-3,.7,.89,-1"
+      hurtbox149="5,-3,.7,.89,-1"
+      hurtbox150="5,-3,.7,.89,-1"
+      hurtbox151="5,-3,.7,.89,-1"
+      hurtbox152="5,20,.7,1.3,-1"
+      hurtbox153="5,20,.7,1.3,-1"
+      hurtbox154="5,20,.7,1.3,-1"
+      hurtbox155="5,20,.7,1.3,-1"
+      hurtbox156="5,20,.7,1.3,-1"
+      hurtbox157="5,20,.7,1.3,-1"
+      hurtbox158="5,20,.7,1.3,-1"
+      hurtbox159="5,20,.7,1.3,-1"
+      hurtbox160="5,20,.7,1.3,-1"
+      hurtbox161="5,20,.7,1.3,-1"
+      hurtbox162="5,20,.7,1.3,-1"
+      hurtbox163="5,20,.7,1.3,-1"
+      hurtbox164="5,20,.7,1.3,-1"
+      hurtbox165="5,20,.7,1.3,-1"
+      hurtbox166="5,20,.7,1.3,-1"
+      hurtbox167="5,20,.7,1.3,-1"
+      hurtbox168="5,20,.7,1.3,-1"
+      hurtbox169="5,20,.7,1.3,-1"
+      hurtbox170="5,20,.7,1.3,-1"
+      hurtbox171="5,20,.7,1.3,-1"
+      hurtbox172="5,20,.7,1.3,-1"
+      hurtbox173="5,20,.7,1.3,-1"
+      hurtbox174="5,20,.7,1.3,-1"
+      hurtbox175="5,20,.7,1.3,-1"
+      hurtbox176="28,20,.7,1.17,14"
+      hurtbox177="28,20,.7,1.17,14"
+      hurtbox178="28,20,.7,1.17,15"
+      hurtbox179="28,20,.7,1.17,-1"
+      hurtbox180="5,20,.7,1.3,-1"
+      hurtbox181="5,20,.7,1.3,-1"
+      hurtbox182="5,20,.7,1.3,-1"
+      hurtbox183="5,20,.7,1.3,-1"
+      hurtbox184="5,20,.7,1.3,-1"
+      hurtbox185="5,20,.7,1.3,-1"
+      hurtbox186="5,20,.7,1.3,-1"
+      hurtbox187="5,20,.7,1.3,-1"
+      hurtbox188="5,20,.7,1.3,-1"
+      hurtbox189="5,20,.7,1.3,-1"
+      hurtbox190="5,20,.7,1.3,-1"
+      hurtbox191="15,-8,.77,.84,-1"
+      hurtbox192="15,-8,.77,.84,-1"
+      hurtbox193="15,-8,.77,.84,-1"
+      hurtbox194="15,-8,.77,.84,-1"
+      hurtbox195="15,-8,.77,.84,-1"
+      hurtbox196="15,-8,.77,.84,-1"
+      hurtbox197="15,-1,.81,.95,-1"
+      hurtbox198="9,8,.7,1.08,-1"
+      hurtbox199="3,13,.68,1.15,-1"
+      hurtbox207="8,24,.64,1.19,-1"
+      hurtbox208="8,24,.64,1.19,-1"
+      hurtbox209="2,17,.61,1.24,-1"
+      hurtbox210="2,17,.61,1.24,-1"
+      hurtbox211="4,7,.67,1.07,-1"
+      hurtbox212="5,15,.7,1.21,-1"
+      hurtbox213="5,15,.7,1.21,-1"
+      hurtbox214="5,20,.7,1.3,-1"
+      hurtbox215="5,20,.7,1.3,-1"
+      hurtbox216="5,20,.7,1.3,-1"
+      hurtbox217="5,20,.7,1.3,-1"
+      hurtbox218="5,20,.7,1.3,-1"
+      hurtbox219="5,20,.7,1.3,-1"
+      hurtbox220="5,20,.7,1.3,-1"
+      hurtbox221="5,20,.7,1.3,10"
+      hurtbox222="5,20,.7,1.3,10"
+      hurtbox223="5,20,.7,1.3,10"
+      hurtbox224="5,20,.7,1.3,11"
+      hurtbox225="5,20,.7,1.3,12"
+      hurtbox226="46,71,.6,.52,13"
+      hurtbox227="5,20,.62,1.3,-1"
+      hurtbox228="5,17,.62,1.25,-1"
+      hurtbox229="9,16,.6,1.21,-1"
+      hurtbox230="5,17,.55,1.22,-1"
+      hurtbox231="6,20,.58,1.27,-1"
+      hurtbox232="5,15,.7,1.21,4"
+      hurtbox233="5,15,.7,1.21,-1"
+      hurtbox234="5,20,.7,1.3,-1"
+      hurtbox235="5,15,.7,1.21,-1"
+      hurtbox236="5,15,.7,1.21,-1"
+      hurtbox237="5,20,.7,1.3,-1"
+      hurtbox238="5,20,.7,1.3,-1"
+      hurtbox239="5,20,.7,1.3,-1"
+      hurtbox240="5,20,.7,1.3,-1"
+      hurtbox241="5,20,.7,1.3,-1"
+      hurtbox242="5,20,.7,1.3,-1"
+      hurtbox243="5,20,.7,1.3,-1"
+      hurtbox244="5,20,.7,1.3,-1"
+      hurtbox245="5,20,.7,1.3,-1"
+      hurtbox246="5,20,.7,1.3,-1"
+      hurtbox247="5,20,.7,1.3,-1"
+      hurtbox248="5,20,.7,1.3,-1"
+      hurtbox249="5,20,.7,1.3,-1"
+      hurtbox250="5,20,.7,1.3,-1"
+      hitbox96="45,50,.7,.35,-1"
+      hitbox100="24,42,.55,.48,-1"
+      hitbox101="32,48,.55,.48,-1"
+      hitbox102="32,66,.55,.76,-1"
+      hitbox105="90,94,.93,.88,2"
+      hitbox106="106,4,.93,1.05,-1"
+      hitbox117="56,-5,1.69,.85,-1"
+      hitbox128="35,-13,.72,.25,-1"
+      hitbox132="35,-13,.72,.25,-1"
+      hitbox138="85,-21,.96,.58,0"
+      hitbox139="85,-21,.96,.58,0"
+      hitbox150="104,-21,1.04,.54,-1"
+      hitbox154="186,28,.56,1.3,3"
+      hitbox166="18,6,.6,.59,-1"
+      hitbox176="88,31,1.06,.49,-1"
+      hitbox177="88,31,1.06,.49,-1"
+      hitbox178="69,34,.68,.54,-1"
+      hitbox190="5,15,.7,1.21,-1"
+      hitbox191="54,-1,.7,.95,-1"
+      hitbox192="54,-1,.7,.95,-1"
+      hitbox220="55,72,.71,.52,5"
+      hitbox221="73,-2,1.01,1.49,-1"
+      hitbox222="73,-2,1.01,1.49,-1"
+      hitbox235="62,23,.81,1.32,4"
+      hitbox245="30,6,1.0,.7,-1"
+      hitbox246="30,6,1.0,.7,-1"
+      hitbox247="30,6,1.0,.7,-1"
+      hitbox248="30,6,1.0,.7,-1"
+      secondaryhitboxcount="6"
+      secondaryhurtboxcount="17"
+      secondaryhurtbox0="25,49,.48,.52,-1"
+      secondaryhurtbox1="51,27,.73,.61,-1"
+      secondaryhurtbox2="0,55,.55,.74,-1"
+      secondaryhurtbox3="45,50,.9,.5,-1"
+      secondaryhurtbox4="31,49,.82,.47,-1"
+      secondaryhurtbox5="50,-13,.72,.66,-1"
+      secondaryhurtbox6="67,-9,.85,.77,-1"
+      secondaryhurtbox7="9,-1,.54,.96,-1"
+      secondaryhurtbox8="15,6,.53,.84,-1"
+      secondaryhurtbox9="21,7,.56,.75,-1"
+      secondaryhurtbox10="65,-28,.95,1.32,-1"
+      secondaryhurtbox11="52,3,.7,.76,-1"
+      secondaryhurtbox12="49,34,.7,.62,-1"
+      secondaryhurtbox13="15,-4,.51,.74,-1"
+      secondaryhurtbox14="78,31,1.0,.48,-1"
+      secondaryhurtbox15="65,35,.7,.5,-1"
+      secondaryhurtbox16="32,81,.7,.61,-1"
+      secondaryhitbox0="165,14,.96,.58,-1"
+      secondaryhitbox1="53,83,.55,.48,-1"
+      secondaryhitbox2="106,15,.93,1.22,-1"
+      secondaryhitbox3="63,137,1.66,.5,-1"
+      secondaryhitbox4="-3,-23,.81,.57,-1"
+      secondaryhitbox5="97,117,.71,.52,-1"
+      collisionbox0="10,-9,.46,.78,-1"
+      collisionbox1="5,13,.47,1.17,-1"
+      collisionbox2="10,30,.40,.8,-1"
+      collisionbox3="10,-30,.6,.3,-1"
+      static="0"
+		/>
+    <!--secondaryhitbox1 is not being used momentarily-->
+		<object name="npc"
+			minxspeed="-4" maxxspeed="-1" 
+			minyspeed="-1" maxyspeed="1" 
+			frameinterval="250" 
+			vulnerable = "1"
+			fly="1"
+			cycle="1"
+			animation="0,1"
+			static="0"
+		/>
+    
+
+	</objects>
+	
+	<!-- sound -->
+	<!-- "cps" is number of channels per sound, 1 for mono, 2 for stereo -->
+	<!-- "bps" is number of bits per sample, usually 8 or 16 -->
+	<!-- "rate" is sample rate -->
+	
+	<sound cps="1" bps="16" rate="44100"/>
+	
+	<sounds level="0">
+	  <sound file="Sounds\\liqhop16.wav" copies="1"/>
+    <sound file="Sounds\\hiphop16.wav" copies="1"/>
+    <sound file="Sounds\\menubuild.wav" copies="1"/>
+	</sounds>
+	
+	<sounds level="1">
+    <sound file="Sounds\\menudrop.wav" copies="1"/>
+    <sound file="Sounds\\breakbeat.wav" copies="1" />
+    <sound file="Sounds\\electro.wav" copies="1" />
+    <sound file="Sounds\\tribal.wav" copies="1" />
+    <sound file="Sounds\\goodvibe16.wav" copies="1" />
+    <sound file="Sounds\\lhit.wav" copies="2" />
+    <sound file="Sounds\\hhit.wav" copies="2" />
+    <sound file="Sounds\\blockhit.wav" copies="2" />
+    <sound file="Sounds\\jump.wav" copies="2" />
+    <sound file="Sounds\\airjump.wav" copies="2" />
+    <sound file="Sounds\\fdash.wav" copies="2" />
+    <sound file="Sounds\\bdash.wav" copies="2" />
+    <sound file="Sounds\\afdash.wav" copies="2" />
+    <sound file="Sounds\\abdash.wav" copies="2" />
+    <sound file="Sounds\\landing.wav" copies="2" />
+    <sound file="Sounds\\standingl.wav" copies="4" />
+    <sound file="Sounds\\standingm.wav" copies="4" />
+    <sound file="Sounds\\standingh.wav" copies="4" />
+    <sound file="Sounds\\crouchingl.wav" copies="4" />
+    <sound file="Sounds\\crouchingm.wav" copies="4" />
+    <sound file="Sounds\\crouchingh.wav" copies="4" />
+    <sound file="Sounds\\jumpingl.wav" copies="4" />
+    <sound file="Sounds\\jumpingm.wav" copies="4" />
+    <sound file="Sounds\\headbuttl.wav" copies="2" />
+    <sound file="Sounds\\headbuttm.wav" copies="2" />
+    <sound file="Sounds\\bleep.wav" copies="6" />
+    <sound file="Sounds\\select.wav" copies="2" />
+    <sound file="Sounds\\now.wav" copies="1" />
+    <sound file="Sounds\\fight.wav" copies="1" />
+    <sound file="Sounds\\laugh.wav" copies="1" />
+	</sounds>
+	
+	<!-- debugger settings -->
+
+	<debug linenumber="1" header="1">
+	  <file select="1" name="debug.txt"/>
+	  <debugger select="1"/>
+	  <ip select="1" address="127.0.0.1" port="1617"/>
+	</debug>
+
+</settings>
